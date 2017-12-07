@@ -4,26 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <title>ToDo App</title>
 </head>
 <body>
 <div class="container">
   <div class="row">
-    <h1>Enter your Task!</h1>
+    <h1 class="text-center">Enter your Task!</h1>
   </div>
   <div class="row">
-
-  <button>Submit</button>
+  <form action="" class="text-center">
+    <input type="text" name="todoItem" id="">
+    <button id="submit">Submit</button>
+  </form>
   </div>
   <div class="row">
     <div class="col-md-6">
-      <h1>Todo List</h1>
+      <h1 class="text-center">Todo List</h1>
+      <ul id="todoList"></ul>
     </div>
     <div class="col-md-6">
-      <h1>Completed Tasks</h1>
+      <h1 class="text-center" id="doneList">Completed Tasks</h1>
+      <ul></ul>
     </div>
   </div>
 </div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
 <!-- Connect Bootstrap
