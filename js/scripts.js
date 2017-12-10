@@ -2,9 +2,9 @@ var submitBtn = document.querySelector("#submit");
 
 submitBtn.addEventListener('click', function(e) {
   e.preventDefault();
-  var input = document.querySelector("#todoItem");
-  var submit = document.querySelector("#todoList");
-  submit.appendChild(input);
+  var input = querySelector('#input');
+  var display = querySelector('#todoList');
+  display.appendChild(input);
 
 });
-//Need to get input to go to ul
+// // //Need to get input to go to ul
