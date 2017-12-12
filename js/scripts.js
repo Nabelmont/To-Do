@@ -1,10 +1,16 @@
-var submitBtn = document.querySelector("#submit");
+//Queries
+var submitBtn = document.querySelector('#submit');
+var input = document.querySelector('#input');
+var display = document.querySelector('#todoList');
+var todo = [];
+var completed = [];
 
 submitBtn.addEventListener('click', function(e) {
   e.preventDefault();
-  var input = querySelector('#input');
-  var display = querySelector('#todoList');
-  display.appendChild(input);
+  var li = document.createElement('li');
+  display.appendChild(li);
+  li.appendChild(todo);
+  todo.appendChild(input).textContent;
+
 
 });
-// // //Need to get input to go to ul
